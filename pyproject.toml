@@ -1,0 +1,12 @@
+[project]
+name = "masterflow-mcp-server"
+version = "0.1.0"
+description = "A Model Context Protocol server providing tools for masterflow api queries for LLMs"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli,rich]>=1.6.0",
+]
+authors = [
+    { "name" = "Ryan", email = "" },
+]
