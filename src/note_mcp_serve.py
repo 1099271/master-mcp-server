@@ -22,11 +22,11 @@ async def make_notes_detail_request(note_id: str) -> dict[str, Any] | None:
 
 @mcp.tool()
 async def get_note_details_by_note_id(note_id: str) -> str:
-    """Get Alert Details By Note ID
+    """Get Note Details By Note ID
     Args:
-        note_id: The ID of the note to get details for
+        note_id: The ID of the xhs note to get details for
     Returns:
-        A string containing the alert details
+        A string like json containing the xhs note details
     """
     note_detail = await make_notes_detail_request(note_id)
     if not note_detail:
